@@ -4,8 +4,8 @@ const { number } = require("joi");
 module.exports.placeSchema = Joi.object({
   place: Joi.object({
     title: Joi.string().required(),
-    price: Joi.number().required().min(0),
-    // image: Joi.string().required(),
+    cost: Joi.number().required().min(0),
+    per: Joi.string(),
     location: Joi.string().required(),
     description: Joi.string().required(),
   }).required(),

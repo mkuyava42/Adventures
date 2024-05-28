@@ -34,21 +34,37 @@
         <div class="valid-feedback">Looks good!</div>
       </div>
 
-      <div class="mb-3">
-        <label class="form-label" for="price">Place Price</label>
+      <div class="mb-1">
+        <label class="form-label" for="cost">Place Price</label>
         <div class="input-group">
-          <span class="input-group-text" id="price-label">$</span>
+          <span class="input-group-text" id="cost-label">$</span>
           <input
             type="text"
             class="form-control"
-            id="price"
+            id="cost"
             placeholder="0.00"
-            aria-label="price"
-            aria-describedby="price-label"
-            name="place[price]"
-            value="<%=place.price %>"
+            aria-label="cost"
+            aria-describedby="cost-label"
+            name="place[cost]"
+            value="<%=place.cost %>"
             required
-          />\
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="per">Per</label>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="per"
+              placeholder="person/vehicle/ect"
+              aria-label="per"
+              aria-describedby="per-label"
+              name="place[per]"
+              value="<%=place.per %>"
+            />
+          </div>
           <div class="valid-feedback">Looks good!</div>
         </div>
       </div>

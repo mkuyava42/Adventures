@@ -22,14 +22,14 @@ const seedDB = async () => {
   await Place.deleteMany({});
   for (let i = 0; i < 400; i++) {
     const random1000 = Math.floor(Math.random() * 1000);
-    const price = Math.floor(Math.random() * 20) + 10;
+    const cost = Math.floor(Math.random() * 20) + 10;
     const camp = new Place({
       author: "660c69ee6818d952e4b9e758",
       location: `${cities[random1000].city}, ${cities[random1000].state}`,
       title: `${sample(descriptors)} ${sample(places)}`,
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolores vero perferendis laudantium, consequuntur voluptatibus nulla architecto, sit soluta esse iure sed labore ipsam a cum nihil atque molestiae deserunt!",
-      price,
+      cost,
       geometry: {
         type: "Point",
         coordinates: [

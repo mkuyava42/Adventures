@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const Review = require("./review");
+const { number } = require("joi");
 const Schema = mongoose.Schema;
 
 // https://res.cloudinary.com/douqbebwk/image/upload/w_300/v1600113904/YelpCamp/gxgle1ovzd2f3dgcpass.png
@@ -30,7 +31,8 @@ const PlaceSchema = new Schema(
         required: true,
       },
     },
-    price: Number,
+    cost: Number,
+    per: String,
     description: String,
     location: String,
     author: {

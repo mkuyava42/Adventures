@@ -196,3 +196,8 @@ screen and (min-resolution: 192dpi) {
         display: none;
     }
 }
+
+.w-100 {
+    width: 100% !important;
+    height: auto;
+}
