@@ -197,7 +197,8 @@ screen and (min-resolution: 192dpi) {
     }
 }
 
-.w-100 {
-    width: 100% !important;
-    height: auto;
+.card-img-top {
+    width: 100%;
+    height: 75vw;
+    object-fit: cover;
 }
