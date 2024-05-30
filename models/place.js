@@ -51,7 +51,7 @@ const PlaceSchema = new Schema(
 
 PlaceSchema.virtual("properties.popUpMarkup").get(function () {
   return `
-    <strong><a href="/placess/${this._id}">${this.title}</a><strong>
+    <strong><a href="/places/${this._id}">${this.title}</a><strong>
     <p>${this.description.substring(0, 20)}...</p>`;
 });
 
