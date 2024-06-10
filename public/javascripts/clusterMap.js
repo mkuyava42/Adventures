@@ -2,8 +2,8 @@ mapboxgl.accessToken = mapToken;
 const map = new mapboxgl.Map({
   container: "cluster-map",
   style: "mapbox://styles/mapbox/light-v10",
-  center: [-103.59179687498357, 40.66995747013945],
-  zoom: 3,
+  center: [-121.4944, 38.5816],
+  zoom: 6,
 });
 
 map.addControl(new mapboxgl.NavigationControl());
@@ -18,7 +18,7 @@ map.on("load", function () {
     // from 12/22/15 to 1/21/16 as logged by USGS' Earthquake hazards program.
     data: places,
     cluster: true,
-    clusterMaxZoom: 14, // Max zoom to cluster points on
+    clusterMaxZoom: 15, // Max zoom to cluster points on
     clusterRadius: 50, // Radius of each cluster when clustering points (defaults to 50)
   });
 
