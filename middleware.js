@@ -1,5 +1,5 @@
-const { placeSchema, reviewSchema } = require("./schemas.js");
-const ExpressError = require("./utils/ExpressError");
+const { placeSchema, reviewSchema } = require("./validation/schemas.js");
+const ExpressError = require("./helpers/ExpressError");
 const Place = require("./models/place.js");
 const Review = require("./models/review");
 

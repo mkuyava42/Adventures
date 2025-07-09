@@ -2,7 +2,7 @@ const Place = require("../models/place");
 const mbxGeocoding = require("@mapbox/mapbox-sdk/services/geocoding");
 const mapBoxToken = process.env.MAPBOX_TOKEN;
 const geocoder = mbxGeocoding({ accessToken: mapBoxToken });
-const { cloudinary } = require("../cloudinary");
+const { storage, cloudinary } = require("../config/cloudinary");
 
 module.exports.index = async (req, res) => {
   const places = await Place.find({});

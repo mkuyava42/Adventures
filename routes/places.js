@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const places = require("../controllers/places");
-const catchAsync = require("../utils/catchAsync");
+const catchAsync = require("../helpers/catchAsync");
 const { isLoggedIn, isAuthor, validatePlace } = require("../middleware");
 const multer = require("multer");
-const { storage } = require("../cloudinary");
+const { storage, cloudinary } = require("../config/cloudinary");
 const upload = multer({ storage });
 
 const Place = require("../models/place");
