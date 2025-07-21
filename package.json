@@ -2,17 +2,31 @@
     "engines": {
         "node": "18.13.0"
     },
-    "name": "places-to-go",
+    "name": "adventures",
     "version": "1.0.0",
-    "description": "",
+    "description": "Node/Express app for creating and reviewing travel adventures",
     "main": "app.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node app.js"
-    },
+    "author": "Marisa Kuyava",
+    "license": "ISC",
+
     "keywords": [],
     "author": "Marisa Kuyava",
     "license": "ISC",
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/mkuyava42/Adventures.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mkuyava42/Adventures/issues"
+  },
+  "homepage": "https://github.com/mkuyava42/Adventures#readme",
+      "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js",
+        "test": "echo \"Error: no test specified\" && exit 0",
+        "lint": "eslint .",
+        "format": "prettier --write ."
+    },
     "dependencies": {
         "@mapbox/mapbox-sdk": "^0.15.5",
         "cloudinary": "^1.41.3",
